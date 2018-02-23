@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185E125F20403E37006CF9B2 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E125E20403E37006CF9B2 /* constants.swift */; };
+		185E1261204040D3006CF9B2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E1260204040D3006CF9B2 /* LoginVC.swift */; };
 		188097E7203C44A900891DB4 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188097E6203C44A900891DB4 /* ChatVC.swift */; };
 		188097E9203C44BA00891DB4 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188097E8203C44BA00891DB4 /* ChannelVC.swift */; };
 		188097EB203C4E5900891DB4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188097EA203C4E5900891DB4 /* GradientView.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185E125E20403E37006CF9B2 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		185E1260204040D3006CF9B2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		188097E6203C44A900891DB4 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		188097E8203C44BA00891DB4 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		188097EA203C4E5900891DB4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 			children = (
 				188097E6203C44A900891DB4 /* ChatVC.swift */,
 				188097E8203C44BA00891DB4 /* ChannelVC.swift */,
+				185E1260204040D3006CF9B2 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -70,6 +75,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		188097EC203D935300891DB4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				185E125E20403E37006CF9B2 /* constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		18A13D60203B3B2B00ACFC77 = {
@@ -93,6 +106,7 @@
 		18A13D6B203B3B2B00ACFC77 /* Smack2 */ = {
 			isa = PBXGroup;
 			children = (
+				188097EC203D935300891DB4 /* Utilities */,
 				188097E5203C448600891DB4 /* Model */,
 				188097E4203C447F00891DB4 /* View */,
 				188097E3203C447600891DB4 /* Controller */,
@@ -271,9 +285,11 @@
 			files = (
 				188097E9203C44BA00891DB4 /* ChannelVC.swift in Sources */,
 				188097E7203C44A900891DB4 /* ChatVC.swift in Sources */,
+				185E1261204040D3006CF9B2 /* LoginVC.swift in Sources */,
 				188097EB203C4E5900891DB4 /* GradientView.swift in Sources */,
 				18A13D6D203B3B2B00ACFC77 /* AppDelegate.swift in Sources */,
 				18A13D82203B3D4700ACFC77 /* SWRevealViewController.m in Sources */,
+				185E125F20403E37006CF9B2 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
