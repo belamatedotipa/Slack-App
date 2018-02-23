@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		185E125F20403E37006CF9B2 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E125E20403E37006CF9B2 /* constants.swift */; };
 		185E1261204040D3006CF9B2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E1260204040D3006CF9B2 /* LoginVC.swift */; };
+		185E126320404439006CF9B2 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E126220404439006CF9B2 /* CreateAccountVC.swift */; };
 		188097E7203C44A900891DB4 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188097E6203C44A900891DB4 /* ChatVC.swift */; };
 		188097E9203C44BA00891DB4 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188097E8203C44BA00891DB4 /* ChannelVC.swift */; };
 		188097EB203C4E5900891DB4 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188097EA203C4E5900891DB4 /* GradientView.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		185E125E20403E37006CF9B2 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		185E1260204040D3006CF9B2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		185E126220404439006CF9B2 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		188097E6203C44A900891DB4 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		188097E8203C44BA00891DB4 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		188097EA203C4E5900891DB4 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				188097E6203C44A900891DB4 /* ChatVC.swift */,
 				188097E8203C44BA00891DB4 /* ChannelVC.swift */,
 				185E1260204040D3006CF9B2 /* LoginVC.swift */,
+				185E126220404439006CF9B2 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				188097E9203C44BA00891DB4 /* ChannelVC.swift in Sources */,
 				188097E7203C44A900891DB4 /* ChatVC.swift in Sources */,
+				185E126320404439006CF9B2 /* CreateAccountVC.swift in Sources */,
 				185E1261204040D3006CF9B2 /* LoginVC.swift in Sources */,
 				188097EB203C4E5900891DB4 /* GradientView.swift in Sources */,
 				18A13D6D203B3B2B00ACFC77 /* AppDelegate.swift in Sources */,
