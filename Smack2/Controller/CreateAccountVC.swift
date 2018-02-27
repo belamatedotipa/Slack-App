@@ -10,29 +10,40 @@ import UIKit
 
 class CreateAccountVC: UIViewController {
 
+    @IBOutlet weak var usernameTxt: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passTxt: UITextField!
+    @IBOutlet weak var userImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func createAccountPressed(_ sender: Any) {
+        guard let email = emailTxt.text , emailTxt.text != "" else {
+            return
+        }
+        guard let password = passTxt.text , passTxt.text != "" else {
+            return
+        }
+        AuthService.instance.registerUser(email: email, password: password) { (success) in
+            
+            if success {
+                print("registered user!")
+            }
+        }
+    }
+    
+    @IBAction func pickAvatarPressed(_ sender: Any) {
+    }
+    
+    @IBAction func pickBGColorPressed(_ sender: Any) {
     }
     
     @IBAction func closePressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
