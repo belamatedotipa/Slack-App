@@ -23,7 +23,11 @@ let URL_LOGIN_LOCAL = "\(BASE_URL_LOCAL)account/login"
 let URL_USER_ADD_LOCAL = "\(BASE_URL_LOCAL)user/add"
 
 
+// COLORS
+let smackPurplePlaceHolder = #colorLiteral(red: 0.3254901961, green: 0.4196078431, blue: 0.7764705882, alpha: 0.5)
 
+// Notifications
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 
 // SEGUES
 let TO_LOGIN = "toLogin"
