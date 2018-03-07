@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18247C7F2050687E0006782A /* ProfileVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247C7D2050687E0006782A /* ProfileVCViewController.swift */; };
+		18247C802050687E0006782A /* ProfileVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18247C7E2050687E0006782A /* ProfileVCViewController.xib */; };
 		182FA60D204709C700173795 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FA60C204709C700173795 /* AvatarPickerVC.swift */; };
 		182FA60F20470C5B00173795 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FA60E20470C5B00173795 /* AvatarCell.swift */; };
 		182FA611204F061200173795 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182FA610204F061200173795 /* CircleImage.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18247C7D2050687E0006782A /* ProfileVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVCViewController.swift; sourceTree = "<group>"; };
+		18247C7E2050687E0006782A /* ProfileVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVCViewController.xib; sourceTree = "<group>"; };
 		182FA60C204709C700173795 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		182FA60E20470C5B00173795 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		182FA610204F061200173795 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -66,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18247C81205068A20006782A /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				18247C7E2050687E0006782A /* ProfileVCViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		185E126420406647006CF9B2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 				185E1260204040D3006CF9B2 /* LoginVC.swift */,
 				185E126220404439006CF9B2 /* CreateAccountVC.swift */,
 				182FA60C204709C700173795 /* AvatarPickerVC.swift */,
+				18247C7D2050687E0006782A /* ProfileVCViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,6 +147,7 @@
 		18A13D6B203B3B2B00ACFC77 /* Smack2 */ = {
 			isa = PBXGroup;
 			children = (
+				18247C81205068A20006782A /* XIBs */,
 				185E126420406647006CF9B2 /* Services */,
 				188097EC203D935300891DB4 /* Utilities */,
 				188097E5203C448600891DB4 /* Model */,
@@ -240,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A13D77203B3B2B00ACFC77 /* LaunchScreen.storyboard in Resources */,
+				18247C802050687E0006782A /* ProfileVCViewController.xib in Resources */,
 				18A13D74203B3B2B00ACFC77 /* Assets.xcassets in Resources */,
 				18A13D72203B3B2B00ACFC77 /* Main.storyboard in Resources */,
 			);
@@ -314,6 +329,7 @@
 			files = (
 				188097E9203C44BA00891DB4 /* ChannelVC.swift in Sources */,
 				182FA60D204709C700173795 /* AvatarPickerVC.swift in Sources */,
+				18247C7F2050687E0006782A /* ProfileVCViewController.swift in Sources */,
 				186D92A42045C09F003E4E29 /* RoundedButton.swift in Sources */,
 				182FA611204F061200173795 /* CircleImage.swift in Sources */,
 				188097E7203C44A900891DB4 /* ChatVC.swift in Sources */,
