@@ -104,6 +104,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZr-gz-r6g">
                                 <rect key="frame" x="218" y="85" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="AddChannelPressed:" destination="QYw-Rl-Ze0" eventType="touchUpInside" id="BA6-6V-cC0"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bIP-HM-21p" customClass="CircleImage" customModule="Smack2" customModuleProvider="target">
                                 <rect key="frame" x="24" y="445" width="99" height="99"/>
@@ -118,7 +121,7 @@
                                 <rect key="frame" x="0.0" y="127" width="320" height="298"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yqg-tT-AE8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="yqg-tT-AE8" customClass="ChannelCell" customModule="Smack2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yqg-tT-AE8" id="Op1-6z-sY9">
@@ -138,6 +141,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="qgD-X7-9W9" id="9HW-t5-NCR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -173,6 +179,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="lH3-uW-5D5" id="EhL-H6-muU"/>
+                        <outlet property="tableView" destination="aj7-FU-CEa" id="civ-oV-Ktw"/>
                         <outlet property="userImg" destination="bIP-HM-21p" id="56x-8e-dRv"/>
                         <segue destination="jfb-KW-SHa" kind="show" identifier="toLogin" id="P8T-h7-KDK"/>
                     </connections>
@@ -273,6 +280,9 @@
                                                         <real key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginPressed:" destination="jfb-KW-SHa" eventType="touchUpInside" id="Xou-bg-Mz9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dee-dG-LyP">
                                                 <rect key="frame" x="0.0" y="40" width="250" height="28"/>
@@ -288,17 +298,26 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="0N3-no-QC4">
+                                <rect key="frame" x="141.5" y="265.5" width="37" height="37"/>
+                                <color key="tintColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CHe-58-8sJ" firstAttribute="trailing" secondItem="Z1x-uy-gJZ" secondAttribute="trailing" constant="16" id="PqY-6b-sX4"/>
+                            <constraint firstItem="0N3-no-QC4" firstAttribute="centerY" secondItem="awG-Mu-YmC" secondAttribute="centerY" id="UYf-rC-VPl"/>
                             <constraint firstItem="3yW-67-eLu" firstAttribute="centerX" secondItem="awG-Mu-YmC" secondAttribute="centerX" id="XTQ-OC-phR"/>
                             <constraint firstItem="3yW-67-eLu" firstAttribute="top" secondItem="Z1x-uy-gJZ" secondAttribute="bottom" constant="64" id="ZJd-F8-qD8"/>
                             <constraint firstItem="Z1x-uy-gJZ" firstAttribute="top" secondItem="CHe-58-8sJ" secondAttribute="top" id="aw0-Ue-AR7"/>
+                            <constraint firstItem="0N3-no-QC4" firstAttribute="centerX" secondItem="awG-Mu-YmC" secondAttribute="centerX" id="hmc-6D-08Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CHe-58-8sJ"/>
                     </view>
                     <connections>
+                        <outlet property="passwordText" destination="Snz-eu-M15" id="GX7-sT-4LC"/>
+                        <outlet property="spinner" destination="0N3-no-QC4" id="wMw-Ab-PnD"/>
+                        <outlet property="userNameText" destination="eLf-MB-bqI" id="RAq-bN-yaU"/>
                         <segue destination="eq7-oS-wQh" kind="show" identifier="toCreateAccount" id="YZX-fq-WJV"/>
                     </connections>
                 </viewController>

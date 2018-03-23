@@ -16,11 +16,14 @@ let BASE_URL = "https://smackslack.herokuapp.com/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 
+
 //LOCAL URLS - FOR TESTING
 let BASE_URL_LOCAL = "http://localhost:3005/v1/"
 let URL_REGISTER_LOCAL = "\(BASE_URL_LOCAL)account/register"
 let URL_LOGIN_LOCAL = "\(BASE_URL_LOCAL)account/login"
 let URL_USER_ADD_LOCAL = "\(BASE_URL_LOCAL)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL_LOCAL)user/byEmail/"
+let URL_GET_CHANNELS = "\(BASE_URL_LOCAL)channel/"
 
 
 // COLORS
@@ -46,6 +49,11 @@ let USER_EMAIL = "userEmail"
 // HEADERS
 
 let HEADER = [
+    "Content-Type": "application/json"
+]
+
+let BEARER_HEADER = [
+    "Authorization":"Bearer \(AuthService.instance.authToken)",
     "Content-Type": "application/json"
 ]
 
