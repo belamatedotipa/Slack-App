@@ -21,16 +21,10 @@ class CreateAccountVC: UIViewController {
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
     var bgColor : UIColor?
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-        
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -41,7 +35,6 @@ class CreateAccountVC: UIViewController {
                 userImg.backgroundColor = UIColor.lightGray
             }
         }
-        
     }
 
     
@@ -87,8 +80,6 @@ class CreateAccountVC: UIViewController {
         UIView.animate(withDuration: 0.2) {
         self.userImg.backgroundColor = self.bgColor
         }
-        
-        
     }
     
     @IBAction func closePressed(_ sender: Any) {
@@ -103,7 +94,6 @@ class CreateAccountVC: UIViewController {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.handleTap) )
        view.addGestureRecognizer(tap)
-        
     }
     
     

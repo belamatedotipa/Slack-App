@@ -22,9 +22,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
-        collectionView.dataSource = self
-
-        
+        collectionView.dataSource = self   
     }
     
     //func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell

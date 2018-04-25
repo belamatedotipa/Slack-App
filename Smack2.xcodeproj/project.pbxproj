@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1818BCBE20641EFE0084E1C4 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818BCBD20641EFE0084E1C4 /* SocketService.swift */; };
+		1818BCC02067E41B0084E1C4 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818BCBF2067E41B0084E1C4 /* Message.swift */; };
+		1818BCC22067F8790084E1C4 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818BCC12067F8790084E1C4 /* KeyboardBoundView.swift */; };
+		1818BCC4206966DA0084E1C4 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818BCC3206966DA0084E1C4 /* MessageTableViewCell.swift */; };
 		18247C7F2050687E0006782A /* ProfileVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247C7D2050687E0006782A /* ProfileVCViewController.swift */; };
 		18247C802050687E0006782A /* ProfileVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18247C7E2050687E0006782A /* ProfileVCViewController.xib */; };
 		18247C832060556B0006782A /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18247C822060556A0006782A /* MessageService.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		1818BCBD20641EFE0084E1C4 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		1818BCBF2067E41B0084E1C4 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1818BCC12067F8790084E1C4 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		1818BCC3206966DA0084E1C4 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		18247C7D2050687E0006782A /* ProfileVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVCViewController.swift; sourceTree = "<group>"; };
 		18247C7E2050687E0006782A /* ProfileVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVCViewController.xib; sourceTree = "<group>"; };
 		18247C822060556A0006782A /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 				182FA60E20470C5B00173795 /* AvatarCell.swift */,
 				182FA610204F061200173795 /* CircleImage.swift */,
 				18247C862061AC840006782A /* ChannelCell.swift */,
+				1818BCC12067F8790084E1C4 /* KeyboardBoundView.swift */,
+				1818BCC3206966DA0084E1C4 /* MessageTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				18247C84206055DE0006782A /* Channel.swift */,
+				1818BCBF2067E41B0084E1C4 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -346,12 +355,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1818BCC22067F8790084E1C4 /* KeyboardBoundView.swift in Sources */,
 				1818BCBE20641EFE0084E1C4 /* SocketService.swift in Sources */,
 				188097E9203C44BA00891DB4 /* ChannelVC.swift in Sources */,
 				18247C872061AC840006782A /* ChannelCell.swift in Sources */,
 				182FA60D204709C700173795 /* AvatarPickerVC.swift in Sources */,
 				18247C7F2050687E0006782A /* ProfileVCViewController.swift in Sources */,
 				186D92A42045C09F003E4E29 /* RoundedButton.swift in Sources */,
+				1818BCC02067E41B0084E1C4 /* Message.swift in Sources */,
 				18247C85206055DE0006782A /* Channel.swift in Sources */,
 				182FA611204F061200173795 /* CircleImage.swift in Sources */,
 				18247C832060556B0006782A /* MessageService.swift in Sources */,
@@ -363,6 +374,7 @@
 				188097EB203C4E5900891DB4 /* GradientView.swift in Sources */,
 				182FA60F20470C5B00173795 /* AvatarCell.swift in Sources */,
 				18A13D6D203B3B2B00ACFC77 /* AppDelegate.swift in Sources */,
+				1818BCC4206966DA0084E1C4 /* MessageTableViewCell.swift in Sources */,
 				18A13D82203B3D4700ACFC77 /* SWRevealViewController.m in Sources */,
 				18247C90206406FC0006782A /* AdddChannelVC.swift in Sources */,
 				185E125F20403E37006CF9B2 /* constants.swift in Sources */,

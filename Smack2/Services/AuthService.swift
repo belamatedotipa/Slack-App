@@ -106,7 +106,9 @@ class AuthService  {
                 self.authToken = json["token"].stringValue
                 
                 
-                
+                MessageService.instance.findAllChannel(completion: { (success) in
+                    //THIS needs to be tested: looks good
+                })
                 
                 self.isLoggedIn = true
                 completion(true)
